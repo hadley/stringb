@@ -13,9 +13,9 @@ stringrb should match stringr behaviour as much as possible. The main exceptions
   engine that stringi provides, but there maybe be subtle differences in 
   edge cases.
   
-* Most stringr functions are recycled over all arguments. Currently, stringb
-  only recycles argument to match the length of `string`. This means that
-  `pattern` must always be a single string.
+* Most stringr functions are recycled over all arguments. stringb provides 
+  much more limited recycling: `pattern` is not recycled; and `str_sub()`
+  only recycles `start` and `stop`, not `string`.
 
 ## Installation
 
