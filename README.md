@@ -10,10 +10,10 @@ stringr provides a zero-dependency (mostly) drop in replacement for stringr impl
 
 stringrb should match stringr behaviour as much as possible. The main exceptions are listed below:
 
-* stringb uses either POSIX 1003.2 extended or Perl-compatible regular 
-  expressions. By and large, these are represent subsets of the ICU backed
-  engine that stringi provides, but there maybe be subtle differences in 
-  edge cases.
+* stringb uses either Perl-compatible regexps (the default) or POSIX 1003.2
+  extended regexps (with `regexp()`). By and large, these are represent subsets 
+  of the ICU backed engine that stringi provides, but there maybe be subtle 
+  differences in edge cases.
 
 * stringr always returns UTF-8 encoded strings; stringb follows the same rules
   as base R.

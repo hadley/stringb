@@ -1,8 +1,8 @@
 #' Control pattern behaviour
 #'
-#' * `regex()`: `fixed = FALSE` & `perl = FALSE` (the default)
+#' * `perl()`: use `perl = TRUE` (the default)
+#' * `regex()`: `fixed = FALSE` & `perl = FALSE`
 #' * `fixed()`: use `fixed = TRUE`
-#' * `perl()`: use `perl = TRUE`
 #'
 #' @param x Pattern whose behaviour will be modified
 #' @param ignore_case If `TRUE`, will ignore case during matching.
@@ -35,7 +35,7 @@ perl <- function(x, ignore_case = FALSE) {
 }
 
 is_fixed <- function(x) inherits(x, "stringb_fixed")
-is_perl <- function(x) inherits(x, "stringb_perl")
+is_perl <- function(x) inherits(x, "stringb_perl") || is.null(attr(x, "class"))
 ignore_case <- function(x) isTRUE(attr(x, "ignore_case"))
 
 

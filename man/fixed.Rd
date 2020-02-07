@@ -19,8 +19,8 @@ perl(x, ignore_case = FALSE)
 }
 \description{
 \itemize{
-\item \code{regex()}: \code{fixed = FALSE} & \code{perl = FALSE} (the default)
+\item \code{perl()}: use \code{perl = TRUE} (the default)
+\item \code{regex()}: \code{fixed = FALSE} & \code{perl = FALSE}
 \item \code{fixed()}: use \code{fixed = TRUE}
-\item \code{perl()}: use \code{perl = TRUE}
 }
 }
