@@ -1,0 +1,18 @@
+Package: stringrbase
+Title: Dependency Free 'stringr'
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Hadley",
+             family = "Wickham",
+             role = c("aut", "cre"),
+             email = "hadley@rstudio.com"),
+      person(given = "RStudio",
+             role = "cph"))
+Description: This is a (mostly) drop-in replacement for stringr, but it has
+    no dependencies. This makes it suitable for use in packages where stringr's
+    stringi dependency would otherwise be unwieldy.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
