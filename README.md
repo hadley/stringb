@@ -12,7 +12,10 @@ stringrb should match stringr behaviour as much as possible. The main exceptions
   expressions. By and large, these are represent subsets of the ICU backed
   engine that stringi provides, but there maybe be subtle differences in 
   edge cases.
-  
+
+* stringr always returns UTF-8 encoded strings; stringb follows the same rules
+  as base R.
+
 * Most stringr functions are recycled over all arguments. stringb provides 
   much more limited recycling: `pattern` is not recycled; and `str_sub()`
   only recycles `start` and `stop`, not `string`.
