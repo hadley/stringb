@@ -9,7 +9,16 @@ str_detect(string, pattern, negate = FALSE)
 \arguments{
 \item{string}{Character vector of strings.}
 
-\item{pattern}{A regular expression.}
+\item{pattern}{A pattern to match. Can be:
+\itemize{
+\item A single string or \code{\link[=regex]{regex()}}, to use POSIX 1003.2 extended regular
+expression.
+\item \code{fixed()} to use a fixed/literal matchi.
+\item \code{perl()} to use a Perl-compatible regular expression.
+}
+
+Unlike stringr, \code{pattern} must be length 1; it will not be recycled to
+the same length as \code{string}.}
 
 \item{negate}{If \code{TRUE}, return non-matching elements.}
 }

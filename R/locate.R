@@ -11,6 +11,8 @@
 #' Each list element is integer matrix with one row for each matche, and two
 #' columns ("start" and "end").
 str_locate <- function(string, pattern) {
+  check_pattern(pattern)
+
   out <- regexpr(pattern, string,
     fixed = is_fixed(pattern),
     perl = is_perl(pattern),

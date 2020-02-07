@@ -37,3 +37,14 @@ perl <- function(x, ignore_case = FALSE) {
 is_fixed <- function(x) inherits(x, "stringb_fixed")
 is_perl <- function(x) inherits(x, "stringb_perl")
 ignore_case <- function(x) isTRUE(attr(x, "ignore_case"))
+
+
+check_pattern <- function(x) {
+  if (!is.character(x) || length(x) != 1) {
+    stop("`pattern` must be a single string", call. = FALSE)
+  }
+
+  if (is.na(x)) {
+    stop("`pattern` can't be NA", call. = FALSE)
+  }
+}
