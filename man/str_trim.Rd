@@ -2,7 +2,7 @@
 % Please edit documentation in R/trim.R
 \name{str_trim}
 \alias{str_trim}
-\title{Trim whitespace of a string}
+\title{Trim whitespace off a string}
 \usage{
 str_trim(string, side = c("both", "left", "right"))
 }
@@ -12,5 +12,5 @@ str_trim(string, side = c("both", "left", "right"))
 \item{side}{Side on which to remove whitespace (left, right or both).}
 }
 \description{
-Trim whitespace of a string
+Trim whitespace off a string
 }

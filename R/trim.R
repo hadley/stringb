@@ -1,4 +1,4 @@
-#' Trim whitespace of a string
+#' Trim whitespace off a string
 #'
 #' @inheritParams str_detect
 #' @param side Side on which to remove whitespace (left, right or both).
