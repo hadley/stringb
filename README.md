@@ -8,7 +8,7 @@
 
 stringr provides a zero-dependency (mostly) drop in replacement for stringr implemented on top of base R regular expressions. This is useful if you are finding stringr's stringi dependency to be onerous for your users (since it requires compilation and a large unicode database).
 
-stringrb should match stringr behaviour as much as possible. The main exceptions are listed below:
+stringb should match stringr behaviour as much as possible. The main exceptions are listed below:
 
 * stringb uses either Perl-compatible regexps (the default) or POSIX 1003.2
   extended regexps (with `regexp()`). By and large, these are represent subsets 
