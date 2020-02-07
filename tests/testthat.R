@@ -1,4 +1,4 @@
 library(testthat)
-library(stringrbase)
+library(stringb)
 
-test_check("stringrbase")
+test_check("stringb")
