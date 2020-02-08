@@ -6,7 +6,7 @@
 [![R build status](https://github.com/hadley/stringb/workflows/R-CMD-check/badge.svg)](https://github.com/hadley/stringb/actions)
 <!-- badges: end -->
 
-stringr provides a zero-dependency (mostly) drop in replacement for stringr implemented on top of base R regular expressions. This is useful if you are finding stringr's stringi dependency to be onerous for your users (since it requires compilation and a large unicode database).
+stringb provides a zero-dependency (mostly) drop in replacement for stringr implemented on top of base R regular expressions. This is useful if you are finding stringr's stringi dependency to be onerous for your users (since it requires compilation and a large unicode database).
 
 stringb should match stringr behaviour as much as possible. The main exceptions are listed below:
 
