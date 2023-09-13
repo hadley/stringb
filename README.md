@@ -3,7 +3,7 @@
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/hadley/stringb/branch/master/graph/badge.svg)](https://codecov.io/gh/hadley/stringb?branch=master)
-[![R build status](https://github.com/hadley/stringb/workflows/R-CMD-check/badge.svg)](https://github.com/hadley/stringb/actions)
+[![R-CMD-check](https://github.com/hadley/stringb/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hadley/stringb/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 stringb provides a zero-dependency (mostly) drop in replacement for stringr implemented on top of base R regular expressions. This is useful if you are finding stringr's stringi dependency to be onerous for your users (since it requires compilation and a large unicode database).
